@@ -8,10 +8,8 @@ async function bootstrap() {
   .setDescription ('The median API description')
   .setVersion('0.1')
   .build();
+
   const document = SwaggerModule.createDocument(app,config);
   SwaggerModule.setup('api', app,document);
   await app.listen(process.env.PORT || 3000);}
-bootstrap();
-=======
-await app.listen(process.env.PORT || 3000);}
 bootstrap();
