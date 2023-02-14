@@ -12,7 +12,11 @@
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
+<<<<<<< HEAD
     "start:prod": "node dist/src/main",
+=======
+"start:prod": "node dist/src/main",
+>>>>>>> 94fda7c2765df0de1f89a96793e9b9453a67859e
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
