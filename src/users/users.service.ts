@@ -7,9 +7,9 @@ import { UpdateUserDto } from './dto/update-user.dto';
 export class UsersService {
 constructor(private prisma: PrismaService){}
 
-  create(createUserDto: CreateUserDto) {
+  create(CreateUserDto: CreateUserDto) {
     //return 'This action adds a new user';
-    return this.prisma.pienssa.create({data:createUserDto});
+    return this.prisma.pienssa.create({data:CreateUserDto});
   }
 
   findAll() {
