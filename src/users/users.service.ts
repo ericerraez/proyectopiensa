@@ -23,7 +23,7 @@ constructor(private prisma: PrismaService){}
     return this.prisma.pienssa.findUnique({where:{id}});
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
+  update(id: number, UpdateUserDto: UpdateUserDto) {
     return this.prisma.pienssa.update({
       where: { id},
       data: UpdateUserDto,
